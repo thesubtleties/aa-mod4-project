@@ -150,7 +150,7 @@ router.get("/", async (req, res) => {
           [
             sequelize.literal(`(
               SELECT "url"
-              FROM ${spotImageTable} AS "SpotImages"
+              FROM "SpotImages"
               WHERE "SpotImages"."spotId" = "Spot"."id" AND "SpotImages"."preview" = true
               LIMIT 1
             )`),
@@ -158,6 +158,7 @@ router.get("/", async (req, res) => {
           ],
         ],
       },
+      logging: console.log, // Add this line to log the query
     });
 
     // Format the response data

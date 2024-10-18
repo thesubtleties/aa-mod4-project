@@ -148,6 +148,18 @@ module.exports = {
             "Charming bungalow in a historic Atlanta neighborhood, close to major attractions.",
           price: 190.0,
         },
+        {
+          ownerId: demoUsers.find((user) => user.username === 'Demo-lition').id,
+          address: '123 Urban Ave',
+          city: 'Metropolis',
+          state: 'NY',
+          country: 'USA',
+          lat: 40.7128,
+          lng: -74.0060,
+          name: 'Urban Studio',
+          description: 'A modern studio apartment in the heart of the city.',
+          price: 150,
+        }
       ],
       { validate: true }
     );

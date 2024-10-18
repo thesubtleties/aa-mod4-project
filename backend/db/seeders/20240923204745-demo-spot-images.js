@@ -33,37 +33,37 @@ module.exports = {
         {
           spotId: demoSpots.find((spot) => spot.name === "Cozy SF Apartment")
             .id,
-          url: "https://example.com/sf-apartment1.jpg",
+          url: "https://plus.unsplash.com/premium_photo-1661915661139-5b6a4e4a6fcc?q=80&w=967&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           preview: true,
         },
         {
           spotId: demoSpots.find((spot) => spot.name === "Cozy SF Apartment")
             .id,
-          url: "https://example.com/sf-apartment2.jpg",
+          url: "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           preview: false,
         },
         {
           spotId: demoSpots.find((spot) => spot.name === "Manhattan Loft").id,
-          url: "https://example.com/manhattan-loft1.jpg",
+          url: "https://plus.unsplash.com/premium_photo-1689609950112-d66095626efb?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           preview: true,
         },
         {
           spotId: demoSpots.find((spot) => spot.name === "Manhattan Loft").id,
-          url: "https://example.com/manhattan-loft2.jpg",
+          url: "https://images.unsplash.com/photo-1504615755583-2916b52192a3?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           preview: false,
         },
         {
           spotId: demoSpots.find(
             (spot) => spot.name === "Hollywood Hills Villa"
           ).id,
-          url: "https://example.com/hollywood-villa1.jpg",
+          url: "https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           preview: true,
         },
         {
           spotId: demoSpots.find(
             (spot) => spot.name === "Hollywood Hills Villa"
           ).id,
-          url: "https://example.com/hollywood-villa2.jpg",
+          url: "https://images.unsplash.com/photo-1434082033009-b81d41d32e1c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           preview: false,
         },
       ],

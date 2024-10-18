@@ -1,0 +1,44 @@
+/* frontend/src/components/Navigation/Navigation.css */
+
+ul {
+  position: relative;
+  list-style: none; /* Optional: Remove bullet points */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li {
+  display: inline-block; /* Ensure list items are displayed inline */
+  margin-right: 20px; /* Add space between list items */
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.hidden {
+  display: none;
+}
+
+.navbar-icon {
+  position: relative; /* Change to relative to work with flexbox */
+  margin-right: 20px; /* Add margin to separate the icon from the next item */
+}
+
+.navbar-title {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.profile-button {
+  margin-left: auto;
+}

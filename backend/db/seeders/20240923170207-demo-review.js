@@ -13,7 +13,7 @@ module.exports = {
     const demoUsers = await User.findAll({
       where: {
         username: {
-          [Op.in]: ["Demo-lition", "FakeUser1", "FakeUser2"],
+          [Op.in]: ["Demo-lition", "FakeUser1", "FakeUser2", "NewUser"],
         },
       },
       attributes: ["id", "username"],
@@ -29,6 +29,7 @@ module.exports = {
             "Beachfront Condo",
             "Rocky Mountain Retreat",
             "Luxury Lakeshore Apartment",
+            "Urban Studio",
           ],
         },
       },
@@ -82,6 +83,34 @@ module.exports = {
             "Serene lakeside stay. The apartment was well-equipped and comfortable.",
           stars: 4,
         },
+        // Additional reviews for "Cozy SF Apartment" to create multiple reviews
+        {
+          spotId: demoSpots.find((spot) => spot.name === "Cozy SF Apartment").id,
+          userId: demoUsers.find((user) => user.username === "Demo-lition").id,
+          review: "Loved the place, very cozy and close to everything.",
+          stars: 4,
+          createdAt: new Date('2022-05-15'),
+          updatedAt: new Date('2022-05-15'),
+        },
+        {
+          spotId: demoSpots.find((spot) => spot.name === "Cozy SF Apartment").id,
+          userId: demoUsers.find((user) => user.username === "FakeUser2").id,
+          review: "It was okay, but the noise was a bit too much.",
+          stars: 3,
+          createdAt: new Date('2022-06-20'),
+          updatedAt: new Date('2022-06-20'),
+        },
+        // A review in the past for sorting purposes
+        {
+          spotId: demoSpots.find((spot) => spot.name === "Cozy SF Apartment").id,
+          userId: demoUsers.find((user) => user.username === "NewUser").id,
+          review: "Stayed here last year, had a wonderful time!",
+          stars: 5,
+          createdAt: new Date('2021-12-10'),
+          updatedAt: new Date('2021-12-10'),
+        },
+        // A review for a new spot to test zero reviews (Urban Studio has no reviews)
+        // Add this only if you have created "Urban Studio" in your Spot seeder
       ],
       { validate: true }
     );

@@ -1,0 +1,33 @@
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0 auto;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input {
+  margin-top: 5px;
+  padding: 5px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #023e8a;
+}
+
+p {
+  color: red;
+  font-size: 0.8em;
+}
